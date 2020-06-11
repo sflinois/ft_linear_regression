@@ -29,8 +29,6 @@ def gradientDescent (km, price, iter) :
 		tmp_theta1 = sum_t1 / float(m)
 		theta0 -= learning_rate * tmp_theta0
 		theta1 -= learning_rate * tmp_theta1
-		if abs(tmp_theta0) < float(0.00001) and abs(tmp_theta1) < float(0.00001):
-			return (theta0 * 1000, theta1)
 	return(theta0 * 1000, theta1)
 
 def dataVis(data, theta0, theta1) :
